@@ -1,6 +1,7 @@
 %define ruby_rubylibdir %(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
 %define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
 Summary:	Hashlike access to arrays
+Summary(pl):	Dostêp do tablic w sposób podobny do tablic asocjacyjnych
 Name:		ruby-arrayfields
 Version:	3.4.0
 Release:	1
@@ -18,6 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Hash-like access to arrays.
+
+%description -l pl
+Dostêp do tablic w sposób podobny do tablic asocjacyjnych.
 
 %prep
 %setup -q -n arrayfields-%{version}
