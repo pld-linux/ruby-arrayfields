@@ -29,7 +29,7 @@ Dostêp do tablic w sposób podobny do tablic asocjacyjnych.
 %build
 %{__install} %SOURCE1 setup.rb
 ruby setup.rb config \
-	--rb-dir=%{ruby_rubylibdir}
+	--siterubyver=%{ruby_rubylibdir}
 
 ruby setup.rb setup
 
