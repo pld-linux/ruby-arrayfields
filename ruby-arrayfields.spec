@@ -1,5 +1,3 @@
-%define ruby_rubylibdir %(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
-%define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
 Summary:	Hashlike access to arrays
 Summary(pl):	Dostêp do tablic w sposób podobny do tablic asocjacyjnych
 Name:		ruby-arrayfields
@@ -11,6 +9,7 @@ Source0:	http://www.codeforpeople.com/lib/ruby/arrayfields/arrayfields-%{version
 # Source0-md5:	537e835998e20d019ac33e1bb5503f64
 Source1:	setup.rb
 URL:		http://raa.ruby-lang.org/project/arrayfields/
+BuildRequires:	rpmbuild(macros) >= 1.263
 BuildRequires:	ruby
 BuildRequires:	ruby-devel
 Requires:	ruby
@@ -25,9 +24,9 @@ Dostêp do tablic w sposób podobny do tablic asocjacyjnych.
 
 %prep
 %setup -q -n arrayfields-%{version}
+install %{SOURCE1} setup.rb
 
 %build
-%{__install} %SOURCE1 setup.rb
 ruby setup.rb config \
 	--siterubyver=%{ruby_rubylibdir}
 
