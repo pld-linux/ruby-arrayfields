@@ -10,7 +10,6 @@ Source0:	http://www.codeforpeople.com/lib/ruby/arrayfields/arrayfields-%{version
 Source1:	setup.rb
 URL:		http://raa.ruby-lang.org/project/arrayfields/
 BuildRequires:	rpmbuild(macros) >= 1.263
-BuildRequires:	ruby-modules
 BuildRequires:	ruby-devel
 Requires:	ruby-modules
 #BuildArch:	noarch
