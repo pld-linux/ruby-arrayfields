@@ -2,7 +2,7 @@ Summary:	Hashlike access to arrays
 Summary(pl):	Dostêp do tablic w sposób podobny do tablic asocjacyjnych
 Name:		ruby-arrayfields
 Version:	3.4.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages
 Source0:	http://www.codeforpeople.com/lib/ruby/arrayfields/arrayfields-%{version}.tgz
@@ -10,9 +10,9 @@ Source0:	http://www.codeforpeople.com/lib/ruby/arrayfields/arrayfields-%{version
 Source1:	setup.rb
 URL:		http://raa.ruby-lang.org/project/arrayfields/
 BuildRequires:	rpmbuild(macros) >= 1.263
-BuildRequires:	ruby
+BuildRequires:	ruby-modules
 BuildRequires:	ruby-devel
-Requires:	ruby
+Requires:	ruby-modules
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
