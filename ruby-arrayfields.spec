@@ -9,9 +9,9 @@ Source0:	http://www.codeforpeople.com/lib/ruby/arrayfields/arrayfields-%{version
 # Source0-md5:	537e835998e20d019ac33e1bb5503f64
 Source1:	setup.rb
 URL:		http://raa.ruby-lang.org/project/arrayfields/
-BuildRequires:	rpmbuild(macros) >= 1.263
+BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-devel
-Requires:	ruby-modules
+%ruby_mod_ver_requires_eq
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
