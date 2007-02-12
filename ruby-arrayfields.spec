@@ -1,5 +1,5 @@
 Summary:	Hashlike access to arrays
-Summary(pl.UTF-8):   Dostęp do tablic w sposób podobny do tablic asocjacyjnych
+Summary(pl.UTF-8):	Dostęp do tablic w sposób podobny do tablic asocjacyjnych
 Name:		ruby-arrayfields
 Version:	3.4.0
 Release:	2
